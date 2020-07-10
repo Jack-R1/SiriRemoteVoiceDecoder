@@ -25,6 +25,8 @@
 /* Begin PBXFileReference section */
 		0492F15C24B85A2100825951 /* SiriRemoteVoiceDecoder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SiriRemoteVoiceDecoder; sourceTree = BUILT_PRODUCTS_DIR; };
 		0492F15F24B85A2100825951 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04E4371024B86D0300C43BD4 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		04E4371124B86D0300C43BD4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,8 @@
 		0492F15E24B85A2100825951 /* SiriRemoteVoiceDecoder */ = {
 			isa = PBXGroup;
 			children = (
+				04E4371024B86D0300C43BD4 /* LICENSE */,
+				04E4371124B86D0300C43BD4 /* README.md */,
 				0492F15F24B85A2100825951 /* main.m */,
 			);
 			path = SiriRemoteVoiceDecoder;
