@@ -3,7 +3,6 @@
 //  SiriRemoteVoiceDecoder
 //
 //  Created by Jack on 12/1/20.
-//  Copyright © 2020 JackR1. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -304,8 +303,8 @@ int main(int argc, const char * argv[]) {
                 if(
                    (
                     [siriRemoteMACAddress isEqualToString:@""] ||      //they did not pass in the mac address or
-                    [inputLine containsString:@"00:00:00:00:00:00"] || //packetlogger did register the correct mac address (it sometimes can do that) or
-                    [inputLine containsString:siriRemoteMACAddress]    //or the mac address matches
+                    [inputLine containsString:@"00:00:00:00:00:00"] || //packetlogger did not register the correct mac address (it sometimes can do that) or
+                    [inputLine containsString:siriRemoteMACAddress]    //the mac address matches
                     ) &&
                    [inputLine containsString:@"RECV"])
                 {
