@@ -43,7 +43,8 @@ Steps:
 4. At this point your remote should be paired to your mac and when you press volume up or down 
    it should trigger volume control on your mac
 
-5. Get the bluetooth mac address of your siri remote and note it to be used later in the steps
+5. Get the bluetooth mac address of your siri remote and note it to be used later in the steps.
+   
    One way to do this is to hold option key and select Bluetooth in menu bar and it should
    show the devices and their mac address, e.g AA-BB-CC-DD-EE-FF, replace any dashes with 
    colons, AA-BB-CC-DD-EE-FF -> AA:BB:CC:DD:EE:FF
