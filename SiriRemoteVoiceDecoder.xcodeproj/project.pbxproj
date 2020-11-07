@@ -368,6 +368,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/SiriRemoteVoiceDecoder/libopus/lib",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -381,6 +382,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/SiriRemoteVoiceDecoder/libopus/lib",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

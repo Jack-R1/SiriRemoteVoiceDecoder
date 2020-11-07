@@ -27,7 +27,7 @@ Make sure you mac supports bluetooth le so your siri remote can pair with your m
 Tools you will need:
 
 	a. Additional Tools for Xcode 10.1 or above (https://developer.apple.com/xcode/)
-	b. SiriRemoteVoiceDecode app from my github repository (https://github.com/Jack-R1/SiriRemoteVoiceDecode)
+	b. SiriRemoteVoiceDecoder app from my github repository (https://github.com/Jack-R1/SiriRemoteVoiceDecoder)
 	
 Steps:
 1. Open System Preferences -> Bluetooth
@@ -64,7 +64,7 @@ Steps:
 9. Under Hardware folder, copy PacketLogger.app to SiriRemote folder you
    created on your desktop
 
-10. Download SiriRemoteVoiceDecode app (https://github.com/Jack-R1/SiriRemoteVoiceDecode)
+10. Download SiriRemoteVoiceDecoder app (https://github.com/Jack-R1/SiriRemoteVoiceDecoder/blob/master/Release/SiriRemoteVoiceDecoder.zip)
 	
     or you can download and build from the project files.
 
@@ -79,13 +79,13 @@ Steps:
 14. Run the below command in terminal, replace AA:BB:CC:DD:EE:FF with the remote MAC address you obtained 
 	in the earlier steps.
   
-	  sudo ./PacketLogger.app/Contents/Resources/packetlogger convert -s -f nhdr | ./SiriRemoteVoiceDecode AA:BB:CC:DD:EE:FF
+	  sudo ./PacketLogger.app/Contents/Resources/packetlogger convert -s -f nhdr | ./SiriRemoteVoiceDecoder AA:BB:CC:DD:EE:FF
 
     You will be prompted for your sudo password as xcode packetlogger needs to run in elevated privileges
 
     you can also do
 
-    echo "password" | sudo -S ./PacketLogger_10.1.app/Contents/Resources/packetlogger convert -s -f nhdr | ./SiriRemoteVoiceDecode AA:BB:CC:DD:EE:FF
+    echo "password" | sudo -S ./PacketLogger_10.1.app/Contents/Resources/packetlogger convert -s -f nhdr | ./SiriRemoteVoiceDecoder AA:BB:CC:DD:EE:FF
 
     This will pipe your password to packet logger so you dont always have to type it in but I would not recommend to show your
     password in plain site. Note the -S after sudo.
@@ -100,13 +100,13 @@ Steps:
 		system preferences (just disconnect, dont unpair) and then reconnect
 
 16. Now press and hold the mic button and speak in to the remote, it should indicate
-	  when voice data starts and ends on the console.
+	when voice data starts and ends on the console.
 
 17. At this point frames.txt file should be created in SiriRemote folder on your desktop
-	  containing the Opus voice data frames from the siri remote
+	containing the Opus voice data frames from the siri remote
 	
 18. And there should be decoded.wav file in SiriRemote folder with the decoded wav output
-	  that you can play in a media player.
+	that you can play in a media player.
 
 
 Next you can have a look at the other application (https://github.com/Jack-R1/SiriRemoteVoiceControl)
